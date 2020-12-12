@@ -10,6 +10,10 @@ function initialiserPage()
 
 function generateTable(formule)
 {
+	/**
+	* @param {array} Le Arrays regroupant le nom , prénom et numéro du participant
+	* @return {string} Le Str du tableau html regroupant nom prenom numéro du participant
+	*/
 
 	table = table + "<tr><td>"+formule['nom']+"</td><td>"+formule['prénom']+"</td><td>"+formule['numéro']+"</td></tr>";
 
@@ -20,11 +24,19 @@ function generateTable(formule)
 
 function ajouterFormulaire(formulaire)
 {
+	/**
+	* @param {string} nom du participant
+	* @param {string} prénom du participant
+	* @param {number} numéro du participant
+	* @return {array} Le Arrays regroupant le nom , prénom et numéro du participant
+	*/
+	
 	var formule = {}
 	var nom = document.getElementById('nom').value;
 	var prénom = document.getElementById('prénom').value;
 	var numéro = document.getElementById('numéro').value;
 	
+
 	formule['nom'] = nom;
 	formule['prénom'] = prénom;
 	formule['numéro'] = numéro;
