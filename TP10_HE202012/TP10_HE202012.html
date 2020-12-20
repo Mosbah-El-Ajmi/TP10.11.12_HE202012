@@ -2,12 +2,21 @@
 <html>
 <head>
 	<meta charset = "utf-8">
-	<title>TP 10 Projet</title>
-	<script src="TP10_HE202012.js"></script>
-    <link rel="stylesheet" type="text/css" href="TP10_HE202012.css">
+	<title>TP 10 Projet : Inscription marathon</title>
+	<script src="TP12_HE202012.js"></script>
+    <link rel="stylesheet" type="text/css" href="TP12_HE202012.css">
+	<img src="logo.png" width="150" height="85">
 </head>
 <body onLoad="initialiserPage()">
 <section>
+		<form action="#" onSubmit="chercherNom() ;return false">
+			<fieldset>
+				<legend>Recherche Coureurs par Nom</legend>
+				<input type="text" id="noms" name="noms" required>
+				<input type="submit" value="Chercher">
+			</fieldset>
+		</form>
+		<b>INSCRIVEZ VOUS AU MARATHON DES MAINTENANT</b>
         <form action="#" onSubmit="ajouterFormulaire(this);return false">
             <fieldset>
                 <legend>Formulaire</legend>
