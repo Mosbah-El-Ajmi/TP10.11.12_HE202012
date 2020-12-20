@@ -66,3 +66,25 @@ function ajouterFormulaire(formulaire)
 		generateTable(formule);
 	}
 }
+
+function chercherNom()
+{
+	var recherche = []
+	var mots = document.getElementById('noms').value;
+	var table = ""
+	
+	for (let i in donnees)
+	{
+		if (donnees[i]['nom'] === mots)
+		{
+			recherche.push(donnees[i])
+		}
+	}
+	
+	for (let i in recherche)
+	{
+		table = table + "<tr><td>"+recherche[i]['nom']+"</td><td>"+recherche[i]['prénom']+"</td><td>"+recherche[i]['numéro']+"</td></tr>";
+	}
+	
+	document.getElementById('passage').innerHTML = table;
+}
